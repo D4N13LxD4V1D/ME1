@@ -11,6 +11,8 @@
         <script> window.onload = function () { var ImageMap = function (map, img) { var n, areas = map.getElementsByTagName('area'), len = areas.length, coords = [], previousWidth = 3900; for (n = 0; n < len; n++) { coords[n] = areas[n].coords.split(','); } this.resize = function () { var n, m, clen, x = img.offsetWidth / previousWidth; for (n = 0; n < len; n++) { clen = coords[n].length; for (m = 0; m < clen; m++) { coords[n][m] *= x; } areas[n].coords = coords[n].join(','); } previousWidth = document.body.clientWidth; return true; }; window.onresize = this.resize; }, imageMap = new ImageMap(document.getElementById('bgmap'), document.getElementById('bg')); imageMap.resize(); return; } </script>
 
         <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
             html {
                 scroll-behavior: smooth;
             }
@@ -57,7 +59,7 @@
                 height: 5vh;
             }
 
-            #logo-kr {
+            #logo {
                 width: auto;
                 max-width: 200px;
                 height: 100%;
@@ -66,13 +68,24 @@
                 grid-row: 1/2;
             }
 
-            #logo-en {
-                width: auto;
-                max-width: 150px;
+            .title {
+                width: 100%;
                 height: 100%;
                 justify-self: center;
                 grid-column: 2/3;
                 grid-row: 2/3;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 20px;
+                justify-content: center;
+            }
+
+            .title p {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 2.5vh;
+                color: white;
+                text-align: center;
             }
 
             #bg {
@@ -86,8 +99,11 @@
 
     <body>
         <div id="homepage">
-            <img src="logo-kr.svg" id="logo-kr" alt="korean logo" />
-            <img src="logo-en.svg" id="logo-en" alt="english logo" />
+            <img src="logo-kr.svg" id="logo" alt="korean logo" />
+            <div class="title">
+                <img src="logo-en.svg" id="logo-en" alt="english logo" />
+                <p>SOLO MUSIC VIDEOS</p>
+            </div>
             <img src="bg.jpg" id="bg" alt="loona" usemap="#bgmap" />
 
             <map name="bgmap" id="bgmap">

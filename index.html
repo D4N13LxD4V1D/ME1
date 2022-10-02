@@ -100,7 +100,6 @@
                 overflow: auto;
                 -ms-overflow-style: none;
                 scrollbar-width: none;
-                text-align: right;
             }
 
             .bg::-webkit-scrollbar {
@@ -111,6 +110,13 @@
                 width: auto;
                 height: 60vh;
                 margin: auto;
+            }
+
+            @media screen and (max-width: 125vh) {
+                .bg img {
+                    position: absolute;
+                    right: 0;
+                }
             }
         </style>
     </head>

@@ -7,9 +7,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>LOOΠΔ Solo MVs</title>
 
-        <!-- for responsive image-maps -->
-        <script> window.onload = function () { var ImageMap = function (map, img) { var n, areas = map.getElementsByTagName('area'), len = areas.length, coords = [], previousWidth = 3900; for (n = 0; n < len; n++) { coords[n] = areas[n].coords.split(','); } this.resize = function () { var n, m, clen, x = img.offsetWidth / previousWidth; for (n = 0; n < len; n++) { clen = coords[n].length; for (m = 0; m < clen; m++) { coords[n][m] *= x; } areas[n].coords = coords[n].join(','); } previousWidth = document.body.clientWidth; return true; }; window.onresize = this.resize; }, imageMap = new ImageMap(document.getElementById('bgmap'), document.getElementById('bgimg')); imageMap.resize(); return; } </script>
-
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
@@ -279,6 +276,15 @@
                 allowfullscreen></iframe>
             <a href="#homepage"><img src="up.svg" alt="" /></a>
         </div>
+
+        <!-- for responsive image-maps -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script type="text/javascript" src="imageMapResizer.min.js"></script>
+        <script type="text/javascript">
+
+            $('map').imageMapResize();
+
+        </script>
     </body>
 
 </html>

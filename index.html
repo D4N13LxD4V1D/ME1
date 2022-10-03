@@ -29,33 +29,6 @@
                 scroll-snap-align: center;
             }
 
-            .content {
-                display: grid;
-                grid-template-columns: 10vw 80vw 10vw;
-                grid-template-rows: 10vh 80vh 10vh;
-                scroll-snap-align: center;
-            }
-
-            .content iframe {
-                grid-column: 2 / 3;
-                grid-row: 2 / 3;
-                justify-self: center;
-                align-self: center;
-                width: 80vw;
-                height: 45vw;
-                max-height: 80vh;
-            }
-
-            .content a,
-            .content a img {
-                grid-column-start: 3;
-                grid-row-start: 3;
-                justify-self: center;
-                align-self: center;
-                width: 5vw;
-                height: 5vh;
-            }
-
             #logo {
                 width: auto;
                 max-width: 150px;
@@ -114,6 +87,27 @@
                     position: absolute;
                     right: 0;
                 }
+            }
+
+            table {
+                width: 80vw;
+                margin: auto;
+                border: 1px white;
+            }
+
+            table tr {
+                scroll-snap-align: center;
+                height: 100vh;
+            }
+
+            table td {
+                border: 1px white;
+            }
+
+            table iframe {
+                height: 45vw;
+                width: 80vw;
+                margin: auto;
             }
         </style>
     </head>
@@ -193,90 +187,104 @@
             </map>
         </div>
 
-        <div class="content" id="heejin">
-            <iframe src="https://www.youtube.com/embed/-FCYE87P5L0" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <a href="#homepage"><img src="images/up.svg" alt="" /></a>
-        </div>
-
-        <div class="content" id="hyunjin">
-            <iframe src="https://www.youtube.com/embed/mybsDDymrsc" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <a href="#homepage"><img src="images/up.svg" alt="" /></a>
-        </div>
-
-        <div class="content" id="haseul">
-            <iframe src="https://www.youtube.com/embed/6a4BWpBJppI" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <a href="#homepage"><img src="images/up.svg" alt="" /></a>
-        </div>
-
-        <div class="content" id="yeojin">
-            <iframe src="https://www.youtube.com/embed/thpTOAS1Vgg" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <a href="#homepage"><img src="images/up.svg" alt="" /></a>
-        </div>
-
-        <div class="content" id="vivi">
-            <iframe src="https://www.youtube.com/embed/ZNcBZM5SvbY" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <a href="#homepage"><img src="images/up.svg" alt="" /></a>
-        </div>
-
-        <div class="content" id="kimlip">
-            <iframe src="https://www.youtube.com/embed/_qJEoSa3Ie0" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <a href="#homepage"><img src="images/up.svg" alt="" /></a>
-        </div>
-
-        <div class="content" id="jinsoul">
-            <iframe src="https://www.youtube.com/embed/RWeyOyY_puQ" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <a href="#homepage"><img src="images/up.svg" alt="" /></a>
-        </div>
-
-        <div class="content" id="choerry">
-            <iframe src="https://www.youtube.com/embed/VBbeuXW8Nko" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <a href="#homepage"><img src="images/up.svg" alt="" /></a>
-        </div>
-
-        <div class="content" id="yves">
-            <iframe src="https://www.youtube.com/embed/LIDe-yTxda0" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <a href="#homepage"><img src="images/up.svg" alt="" /></a>
-        </div>
-
-        <div class="content" id="chuu">
-            <iframe src="https://www.youtube.com/embed/BVVfMFS3mgc" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <a href="#homepage"><img src="images/up.svg" alt="" /></a>
-        </div>
-
-        <div class="content" id="gowon">
-            <iframe src="https://www.youtube.com/embed/m5qwcYL8a0o" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <a href="#homepage"><img src="images/up.svg" alt="" /></a>
-        </div>
-
-        <div class="content" id="olivia-hye">
-            <iframe src="https://www.youtube.com/embed/UkY8HvgvBJ8" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <a href="#homepage"><img src="images/up.svg" alt="" /></a>
-        </div>
-
+        <table>
+            <tr>
+                <td id="heejin">
+                    <iframe src="https://www.youtube.com/embed/-FCYE87P5L0" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </td>
+            </tr>
+            <tr>
+                <td id="hyunjin">
+                    <iframe src="https://www.youtube.com/embed/mybsDDymrsc" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </td>
+            </tr>
+            <tr>
+                <td id="haseul">
+                    <iframe src="https://www.youtube.com/embed/6a4BWpBJppI" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </td>
+            </tr>
+            <tr>
+                <td id="yeojin">
+                    <iframe src="https://www.youtube.com/embed/thpTOAS1Vgg" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </td>
+            </tr>
+            <tr>
+                <td id="vivi">
+                    <iframe src="https://www.youtube.com/embed/ZNcBZM5SvbY" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </td>
+            </tr>
+            <tr>
+                <td id="kimlip">
+                    <iframe src="https://www.youtube.com/embed/_qJEoSa3Ie0" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </td>
+            </tr>
+            <tr>
+                <td id="jinsoul">
+                    <iframe src="https://www.youtube.com/embed/RWeyOyY_puQ" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </td>
+            </tr>
+            <tr>
+                <td id="choerry">
+                    <iframe src="https://www.youtube.com/embed/VBbeuXW8Nko" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </td>
+            </tr>
+            <tr>
+                <td id="yves">
+                    <iframe src="https://www.youtube.com/embed/LIDe-yTxda0" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </td>
+            </tr>
+            <tr>
+                <td id="chuu">
+                    <iframe src="https://www.youtube.com/embed/BVVfMFS3mgc" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </td>
+            </tr>
+            <tr>
+                <td id="gowon">
+                    <iframe src="https://www.youtube.com/embed/m5qwcYL8a0o" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </td>
+            </tr>
+            <tr>
+                <td id="olivia-hye">
+                    <iframe src="https://www.youtube.com/embed/UkY8HvgvBJ8" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </td>
+            </tr>
+        </table>
         <!-- for responsive image-maps -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <script type="text/javascript" src="js/imageMapResizer.min.js"></script>

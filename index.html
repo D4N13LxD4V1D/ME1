@@ -98,10 +98,16 @@
             table tr {
                 scroll-snap-align: center;
                 height: 100vh;
+
+            }
+
+            .info {
+                font-size: 1.25vh;
+                text-align: center;
             }
 
             table iframe {
-                height: 45vw;
+                height: 38vw;
                 width: 80vw;
                 margin: auto;
             }
@@ -111,19 +117,24 @@
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                gap: 10px;
-
+                margin-top: 5vh;
             }
 
-            table .back img {
-                height: 5vh;
-                width: 5vw;
-                margin: 2.5vh 0 0 37.5vw;
+            table .back a {
+                color: black;
+                background-color: white;
+                padding: 0 1.5vw;
+                text-decoration: none;
+                font-size: 2vh;
+            }
+
+            [data-href] {
+                cursor: pointer;
             }
         </style>
     </head>
 
-    <body>
+    <body onclick='window.location="#";'>
         <div id="homepage">
             <img src="images/logo-kr.svg" id="logo" alt="korean logo" />
             <div class="title">
@@ -207,10 +218,10 @@
                     </iframe>
                     <div class="back">
                         <a href="#homepage" alt="Go Up">
-                            <img src="images/up.svg" alt="" />
                             <p>Go Back Home</p>
                         </a>
                     </div>
+                    <p class="info">* Alternatively, you can click outside the video to go back.</p>
                 </td>
             </tr>
             <tr>
@@ -221,10 +232,10 @@
                     </iframe>
                     <div class="back">
                         <a href="#homepage" alt="Go Up">
-                            <img src="images/up.svg" alt="" />
                             <p>Go Back Home</p>
                         </a>
                     </div>
+                    <p class="info">* Alternatively, you can click outside the video to go back.</p>
                 </td>
             </tr>
             <tr>
@@ -235,10 +246,10 @@
                     </iframe>
                     <div class="back">
                         <a href="#homepage" alt="Go Up">
-                            <img src="images/up.svg" alt="" />
                             <p>Go Back Home</p>
                         </a>
                     </div>
+                    <p class="info">* Alternatively, you can click outside the video to go back.</p>
                 </td>
             </tr>
             <tr>
@@ -249,10 +260,10 @@
                     </iframe>
                     <div class="back">
                         <a href="#homepage" alt="Go Up">
-                            <img src="images/up.svg" alt="" />
                             <p>Go Back Home</p>
                         </a>
                     </div>
+                    <p class="info">* Alternatively, you can click outside the video to go back.</p>
                 </td>
             </tr>
             <tr>
@@ -263,10 +274,10 @@
                     </iframe>
                     <div class="back">
                         <a href="#homepage" alt="Go Up">
-                            <img src="images/up.svg" alt="" />
                             <p>Go Back Home</p>
                         </a>
                     </div>
+                    <p class="info">* Alternatively, you can click outside the video to go back.</p>
                 </td>
             </tr>
             <tr>
@@ -277,10 +288,10 @@
                     </iframe>
                     <div class="back">
                         <a href="#homepage" alt="Go Up">
-                            <img src="images/up.svg" alt="" />
                             <p>Go Back Home</p>
                         </a>
                     </div>
+                    <p class="info">* Alternatively, you can click outside the video to go back.</p>
                 </td>
             </tr>
             <tr>
@@ -291,10 +302,10 @@
                     </iframe>
                     <div class="back">
                         <a href="#homepage" alt="Go Up">
-                            <img src="images/up.svg" alt="" />
                             <p>Go Back Home</p>
                         </a>
                     </div>
+                    <p class="info">* Alternatively, you can click outside the video to go back.</p>
                 </td>
             </tr>
             <tr>
@@ -305,10 +316,10 @@
                     </iframe>
                     <div class="back">
                         <a href="#homepage" alt="Go Up">
-                            <img src="images/up.svg" alt="" />
                             <p>Go Back Home</p>
                         </a>
                     </div>
+                    <p class="info">* Alternatively, you can click outside the video to go back.</p>
                 </td>
             </tr>
             <tr>
@@ -319,10 +330,10 @@
                     </iframe>
                     <div class="back">
                         <a href="#homepage" alt="Go Up">
-                            <img src="images/up.svg" alt="" />
                             <p>Go Back Home</p>
                         </a>
                     </div>
+                    <p class="info">* Alternatively, you can click outside the video to go back.</p>
                 </td>
             </tr>
             <tr>
@@ -333,10 +344,10 @@
                     </iframe>
                     <div class="back">
                         <a href="#homepage" alt="Go Up">
-                            <img src="images/up.svg" alt="" />
                             <p>Go Back Home</p>
                         </a>
                     </div>
+                    <p class="info">* Alternatively, you can click outside the video to go back.</p>
                 </td>
             </tr>
             <tr>
@@ -347,10 +358,10 @@
                     </iframe>
                     <div class="back">
                         <a href="#homepage" alt="Go Up">
-                            <img src="images/up.svg" alt="" />
                             <p>Go Back Home</p>
                         </a>
                     </div>
+                    <p class="info">* Alternatively, you can click outside the video to go back.</p>
                 </td>
             </tr>
             <tr>
@@ -361,16 +372,16 @@
                     </iframe>
                     <div class="back">
                         <a href="#homepage" alt="Go Up">
-                            <img src="images/up.svg" alt="" />
                             <p>Go Back Home</p>
                         </a>
                     </div>
+                    <p class="info">* Alternatively, you can click outside the video to go back.</p>
                 </td>
             </tr>
         </table>
 
         <!-- for responsive image-maps -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/imageMapResizer.min.js"></script>
         <script type="text/javascript">
 
